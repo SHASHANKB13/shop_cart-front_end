@@ -1,0 +1,429 @@
+/* Home.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.card-inner {
+  padding: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-subtitle h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* header part */
+
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 25px;
+}
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+.icon,
+.icon_header {
+  margin-right: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.close_icon {
+  color: rgb(0, 0, 0);
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.logo_icon {
+  color: rgb(255, 242, 0);
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Header  */
+.header {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0059ff;
+  color: #ffffff;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  /* background-color: #ffffff; */
+}
+
+.header-center {
+  grid-area: header;
+  height: 40px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+/* product details page styles */
+
+/* ProductDetails.css */
+
+.product-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #000;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+}
+
+.product-details {
+  width: 45%;
+}
+
+.product-image {
+  width: 50%;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+.background-container {
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  background-color: #3792f4;
+  color: #fff;
+  border: none;
+  padding: 15px 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #3792f4;
+}
+
+.cart-button {
+  background-color: #f6ff00;
+  color: #000000;
+  border: none;
+  padding: 15px 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.shop-icon {
+  color: #000000;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  height: 100%;
+  width: 40px;
+}
+
+/* buy product */
+
+.buy-background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.buy-product-details-container {
+  display: flex;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #000;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.buy-product-details {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.buy-product-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.buy-product-card {
+  width: calc(50% - 10px); /* Two cards per row with a small gap */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.buy-product-card h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buy-product-card h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.buy-product-image img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.buy-cart-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+}
+
+.buy-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #d5d5d5;
+  color: #000000;
+  border: none;
+  padding: 15px 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  height: auto;
+}
+
+.delete-button:hover {
+  background-color: #ff6464;
+}
+
+/* extra */
+
+.category-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-cart-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-icon {
+  color: #000000;
+  margin-right: 10px;
+  cursor: pointer;
+  height: 100%;
+  width: 40px;
+}
+
+.check-cart-icon {
+  color: #347bff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* payment radio button design styles */
+
+/* Container for the radio buttons */
+.radio-container {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each radio button */
+.radio-item {
+  margin-bottom: 10px; /* Add some space between each radio button */
+}
+
+/* Hide the actual radio button input */
+.radio-input {
+  display: none;
+}
+
+/* Style for the radio button label */
+.radio-label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px; /* Add space for custom radio button */
+  position: relative;
+}
+
+/* Custom radio button indicator */
+.radio-indicator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #333; /* Border color */
+  background-color: #fff; /* Background color */
+}
+
+/* Style for the radio button when checked */
+.radio-input:checked + .radio-label .radio-indicator::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #333; /* Color of the indicator when checked */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.payment-icons {
+  color: #8700d0;
+  margin-left: 10px;
+}
+
+.invoice-button {
+  background-color: #8700d0;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+}
+
+.invoice-button:hover {
+  background-color: #0056b3;
+}
+
+.gift-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #ffffff;
+}
+.gift-icon {
+  color: #8700d0;
+  margin-left: 70px;
+  width: 10%;
+  height: auto;
+}
+
+.qr-image img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
